@@ -1,4 +1,14 @@
 #' Generates data-set for Wednesday challenge February
+#' @description Simulates various scenarios according to sequence of values
+#'     for the hazard-rate of the active control and the hazard-ratio.
+#' @param h_c_seq - numeric vector. Sequence of values for the hazard rate
+#'     in control arm.
+#' @param HR_seq - numeric vector. Sequence of values for the hazard ratio.
+#' @param uni_dim - logical. Is optimization problem unidimansional ?
+#'     Default and only current possibility is TRUE and uses 'optimize'. If
+#'     FALSE the routine will still work using 'optim' and this alternative
+#'     allows for development of multidimensinoal optimization (see
+#'     Discussion of accompanying HTML vignette)
 #' @returns data.frame
 #' @export
 #' @examples{

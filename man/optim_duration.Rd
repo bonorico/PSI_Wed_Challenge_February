@@ -12,6 +12,22 @@ optim_duration(
   uni_dim = TRUE
 )
 }
+\arguments{
+\item{tot_dur}{- scalar. Total study duration (accrual time + follow-up
+time) in months.}
+
+\item{accr_time}{- scalar. Accrual time in months.}
+
+\item{h_c}{- scalar. Value of hazard rate in control arm.}
+
+\item{HR}{- scalar. Hazard ratio.}
+
+\item{uni_dim}{- logical. Is optimization problem unidimansional ?
+Default and only current possibility is TRUE and uses 'optimize'. If
+FALSE the routine will still work using 'optim' and this alternative
+allows for development of multidimensinoal optimization (see
+Discussion of accompanying HTML vignette)}
+}
 \value{
 list of optimal duration and updated Nr. of required failures
 }
@@ -21,4 +37,8 @@ Optimizes total study duration for a fixed accrual time. Hence, it returns
     size. Thus, the function can be used to investigate follow-up variation by varying of
     baseline hazard, HR, or other quantities used for sample size calculation according
     to the exponential model given by Lachin et al (1986) (see package gsDesign).
+}
+\details{
+This optimization approach takes inspiration from the methods of Rubinstein et al (1981) and George & Desu (1974) as referenced in the
+    accompanying HTML vignette (see folder 'out')
 }

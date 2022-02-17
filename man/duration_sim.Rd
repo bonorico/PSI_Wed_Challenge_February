@@ -10,11 +10,24 @@ duration_sim(
   uni_dim = TRUE
 )
 }
+\arguments{
+\item{h_c_seq}{- numeric vector. Sequence of values for the hazard rate
+in control arm.}
+
+\item{HR_seq}{- numeric vector. Sequence of values for the hazard ratio.}
+
+\item{uni_dim}{- logical. Is optimization problem unidimansional ?
+Default and only current possibility is TRUE and uses 'optimize'. If
+FALSE the routine will still work using 'optim' and this alternative
+allows for development of multidimensinoal optimization (see
+Discussion of accompanying HTML vignette)}
+}
 \value{
 data.frame
 }
 \description{
-Generates data-set for Wednesday challenge February
+Simulates various scenarios according to sequence of values
+    for the hazard-rate of the active control and the hazard-ratio.
 }
 \examples{
 {

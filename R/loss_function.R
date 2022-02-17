@@ -1,4 +1,10 @@
 #' Loss function for the optimization problem
+#' @param tot_dur - scalar. Total study duration (accrual time + follow-up
+#'    time) in months.
+#' @param accr_time - scalar. Accrual time in months.
+#' @param h_c - scalar. Value of hazard rate in control arm.
+#' @param HR - scalar. Hazard ratio.
+#' @param given_N - integer. Fixed sample size.
 #' @detail To avoid singular values a constraint "total time greater equal
 #'     than accrual time" must be enforced.
 #' @importFrom gsDesign nSurvival

@@ -12,6 +12,18 @@ loss_function(
   given_N = 10157
 )
 }
+\arguments{
+\item{tot_dur}{- scalar. Total study duration (accrual time + follow-up
+time) in months.}
+
+\item{accr_time}{- scalar. Accrual time in months.}
+
+\item{h_c}{- scalar. Value of hazard rate in control arm.}
+
+\item{HR}{- scalar. Hazard ratio.}
+
+\item{given_N}{- integer. Fixed sample size.}
+}
 \value{
 numeric
 }
