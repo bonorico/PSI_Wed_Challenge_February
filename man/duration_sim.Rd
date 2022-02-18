@@ -18,7 +18,7 @@ in control arm.}
 
 \item{uni_dim}{- logical. Is optimization problem unidimansional ?
 Default and only current possibility is TRUE and uses 'optimize'. If
-FALSE the routine will still work using 'optim' and this alternative
+FALSE the routine will still work using 'optimx' and this alternative
 allows for development of multidimensinoal optimization (see
 Discussion of accompanying HTML vignette)}
 }
@@ -31,6 +31,7 @@ Simulates various scenarios according to sequence of values
 }
 \examples{
 {
+\dontrun{
 library(gsDesign)
 library(optimx)
 library(dplyr)
@@ -71,5 +72,6 @@ anim_save("Wednesday_challenge.gif")
 
 # save data-set
 write.table(dur_dat, "dur_dat")
+}
 }
 }

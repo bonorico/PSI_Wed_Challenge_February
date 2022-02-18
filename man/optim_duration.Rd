@@ -24,7 +24,7 @@ time) in months.}
 
 \item{uni_dim}{- logical. Is optimization problem unidimansional ?
 Default and only current possibility is TRUE and uses 'optimize'. If
-FALSE the routine will still work using 'optim' and this alternative
+FALSE the routine will still work using 'optimx' and this alternative
 allows for development of multidimensinoal optimization (see
 Discussion of accompanying HTML vignette)}
 }

@@ -6,12 +6,13 @@
 #' @param HR_seq - numeric vector. Sequence of values for the hazard ratio.
 #' @param uni_dim - logical. Is optimization problem unidimansional ?
 #'     Default and only current possibility is TRUE and uses 'optimize'. If
-#'     FALSE the routine will still work using 'optim' and this alternative
+#'     FALSE the routine will still work using 'optimx' and this alternative
 #'     allows for development of multidimensinoal optimization (see
 #'     Discussion of accompanying HTML vignette)
 #' @returns data.frame
 #' @export
 #' @examples{
+#' \dontrun{
 #' library(gsDesign)
 #' library(optimx)
 #' library(dplyr)
@@ -52,6 +53,7 @@
 #'
 #' # save data-set
 #' write.table(dur_dat, "dur_dat")
+#' }
 #' }
 
 duration_sim <- function(h_c_seq = seq(0.03, 0.07, 0.005),

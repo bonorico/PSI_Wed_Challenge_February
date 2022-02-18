@@ -30,3 +30,7 @@ numeric
 \description{
 Loss function for the optimization problem
 }
+\details{
+To avoid singular values a constraint "total time greater equal
+    than accrual time" must be enforced.
+}

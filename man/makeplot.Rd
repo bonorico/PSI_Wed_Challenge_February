@@ -12,6 +12,12 @@ makeplot(df, basehaz)
 \item{basehaz}{numeric - value of 'baseline_haz' variable. Range should
 restrict to output of 'duration_sim'}
 }
+\value{
+ggplot
+}
 \description{
 Plot Wednesday challenge data (no animation)
+}
+\details{
+Meant to be used within Shiny app
 }

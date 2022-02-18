@@ -2,11 +2,11 @@
 #' @param df data.frame - output of 'duration_sim'
 #' @param basehaz numeric - value of 'baseline_haz' variable. Range should
 #'     restrict to output of 'duration_sim'
-#' @detail Meant to be used within Shiny app
+#' @details Meant to be used within Shiny app
 #' @importFrom dplyr filter '%>%'
 #' @import ggplot2
 #' @export
-#' @results ggplot
+#' @returns ggplot
 
 makeplot <- function(df, basehaz){
 

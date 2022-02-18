@@ -5,7 +5,7 @@
 #' @param h_c - scalar. Value of hazard rate in control arm.
 #' @param HR - scalar. Hazard ratio.
 #' @param given_N - integer. Fixed sample size.
-#' @detail To avoid singular values a constraint "total time greater equal
+#' @details To avoid singular values a constraint "total time greater equal
 #'     than accrual time" must be enforced.
 #' @importFrom gsDesign nSurvival
 #' @export
