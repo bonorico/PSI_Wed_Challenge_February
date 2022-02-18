@@ -7,8 +7,9 @@ Maintainer: The package maintainer <federico.bonofiglio@veramed.co.uk>
 Description: Wednesday challenge February: produces the required data for plotting.
 Depends:
      gsDesign,
-     dplyr
-License: Veramed Ltd
+     dplyr,
+     optimx
+License: GPLv3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
