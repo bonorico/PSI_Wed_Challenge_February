@@ -2,7 +2,9 @@
 title: "Wednesday Challenge (February 2022)"
 author: "Federico Bonofiglio and Alexander Schacht"
 date: "06/02/2022"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 bibliography: references.bib
 ---
 
@@ -63,6 +65,8 @@ The animated figure below plots TSD against HR for varying values of the baselin
 The plot shows that both required number of failures and TSD increase for increasing HR (decreasing treatment effect). Moreover, TSD generally decreases for increasing baseline hazard.
 
 The optimal TSD is found for increasing treatment effect (HR -> 0) and for increasing baseline hazard, which also yields the smallest number of required failures. Eventually, as the hazard in the active comparator becomes so high, TSD reaches its lower bound for all HR values.
+
+For PDF output please refer to the separate Wednesday_challenge.gif file.
 
 ```{r mainplot, echo=FALSE, message = FALSE}
 ggplot(dur_dat, aes(HR, optim_dur, size = required_events)) +
