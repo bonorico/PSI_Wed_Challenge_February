@@ -6,7 +6,7 @@ This question was made at the PSI [Wednesday challenge](https://www.psiweb.org/s
 this small package gives an answer to it. 
 
 ## Installation
-`devtools::install_github("bonorico/PSI_Wed_Challenge_February")`
+`devtools::install_github("bonorico/studydur")`
 
 ## Additional infos
 Run `output_example.R` (set `yes_ggplot <- TRUE`) in folder `out` to produce the proposed plot (see gif result), see `Bericht.pdf`, or run `Bericht.Rmd` (HTML-knit in Rstudio) to have more infos about the challenge and the proposed approach.
