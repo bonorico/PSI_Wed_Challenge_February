@@ -1,6 +1,6 @@
-Package: Fallzahlchallenge
+Package: studydur
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Assessment of total trial duration in planning a survival study for varying key assumptions
 Version: 0.1.0
 Author: Federico Bonofiglio
 Maintainer: The package maintainer <federico.bonofiglio@veramed.co.uk>
