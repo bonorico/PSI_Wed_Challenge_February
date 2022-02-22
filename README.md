@@ -8,6 +8,9 @@ this small package gives an answer to it.
 ## Installation
 `devtools::install_github("bonorico/studydur")`
 
+## Basic documentation
+Type `?optim_duration` and alike. 
+
 ## Additional infos
 Run `output_example.R` (set `yes_ggplot <- TRUE`) in folder `out` to produce the proposed plot (see gif below).
 See `Bericht.pdf`, or run `Bericht.Rmd` (HTML-knit in Rstudio) to have more infos about the challenge and the proposed approach.
