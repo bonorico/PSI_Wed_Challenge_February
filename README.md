@@ -6,7 +6,11 @@ This question was made at the PSI [Wednesday challenge](https://www.psiweb.org/s
 this small package gives an answer to it. 
 
 ## Installation
-`devtools::install_github("bonorico/studydur")`
+```
+devtools::install_github("bonorico/studydur")
+library(studydur)
+```
+
 
 ## Basic documentation
 Type `?optim_duration` and alike. 
