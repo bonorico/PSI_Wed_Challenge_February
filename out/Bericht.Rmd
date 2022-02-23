@@ -3,8 +3,8 @@ title: "Wednesday Challenge (February 2022)"
 author: "Federico Bonofiglio and Alexander Schacht"
 date: "06/02/2022"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 bibliography: references.bib
 ---
 
@@ -13,7 +13,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r load data, echo = FALSE, results= FALSE, message = FALSE}
-source("output_example.R")
+library(studydur)
+library(dplyr)
+library(gganimate)
+library(transformr)
+library(gifski)
+# generate data
+dur_dat <- duration_sim()
+ref_dat <- dur_dat %>% filter(baseline_haz == 0.05) %>%
+  select(-baseline_haz) %>%
+  rename(ref_HR = HR)
+
 ```
 
 ## This month's challenge
