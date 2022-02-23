@@ -13,14 +13,11 @@
 #' @export
 #' @examples{
 #' \dontrun{
-#' library(gsDesign)
-#' library(optimx)
 #' library(dplyr)
-#' library(ggplot2)
 #' library(gganimate)
 #' library(transformr)
 #' library(gifski)
-#' library(Fallzahlchallenge)
+#' library(studydur)
 #' # generate data
 #' system.time(
 #'   dur_dat <- duration_sim()
