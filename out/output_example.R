@@ -2,7 +2,7 @@
 
 #library(numDeriv)
 #library(pso)
-library(Fallzahlchallenge)
+library(studydur)
 library(dplyr)
 library(gganimate)
 library(transformr)
@@ -42,11 +42,11 @@ if (yes_ggplot)
 
   # save gif
   anim_save("Wednesday_challenge.gif",
-            filename = getwd())
+            path = file.path(getwd(), "out"))
 
 }
 
 # save data-set
 write.table(dur_dat,
-            file.path(getwd(), "dur_dat"))
+            file.path(getwd(), "out", "dur_dat"))
 
